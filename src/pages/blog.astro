@@ -1,5 +1,5 @@
 ---
-
+const pageTitle = "el mero blog"
 ---
 
 <html lang="en">
@@ -9,11 +9,16 @@
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<h1>Proyectada 1</h1>
-        <h2>Super proyectada, dia: hoy</h2>
-        <p>Ayuda no sé que clase de persona soy no me siento bien</p>
+		<h1>{pageTitle}</h1>
+        <h2>Super proyectadas chingonas</h2>
+        <p>Ayuda no me siento bien</p>
+		<ul>
+			<li><a href="posts/post1">post 1</a></li>
+			<li><a href="posts/post2">post 2</a></li>
+			<li><a href="posts/post3">post 3</a></li>
+		</ul>
 	</body>
 </html>
