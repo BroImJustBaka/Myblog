@@ -1,0 +1,49 @@
+html {
+  background-color: #ae88f9;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 80ch;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+}
+.enlaces {
+  display: none;
+}
+
+.enlaces a {
+  display: block;
+  padding: 0.5rem 0;
+  color: black;
+}
+
+.enlaces.abierto {
+  display: block;
+}
+
+@media (min-width: 640px) {
+  .menu-btn {
+    display: none;
+  }
+
+  .enlaces {
+    display: block;
+  }
+
+  .enlaces a {
+    display: inline-block;
+    padding: 0.5rem 1rem 0.5rem 0;
+  }
+}

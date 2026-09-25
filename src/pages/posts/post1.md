@@ -1,8 +1,8 @@
----
+﻿---
 title: 'Mi primera publicación en el blog'
 pubDate: 2026-09-24
 description: 'Este es la primera publicación de mi nuevo blog Astro.'
-author: 'Alumno de Astro'
+author: Santiago Becerra Arias
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'El logotipo de Astro sobre un fondo oscuro con un brillo rosado.'

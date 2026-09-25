@@ -1,0 +1,27 @@
+﻿---
+import Social from './Social.astro';
+const autor = "Santiago Becerra Arias";
+const registro = "23300648";
+---
+<footer>
+	<p>Hecho a puro sufrimiento por {autor}, registro {registro}.</p>
+	<div class="redes">
+		<Social plataforma="github" usuario="BroImJustBaka" chiste="(aquí sí hay código, lo juro)" />
+		<Social plataforma="youtube" usuario="astrodotbuild" chiste="(no tengo canal, presto el de Astro)" />
+		<Social plataforma="twitter" usuario="astrodotbuild" chiste="(tampoco tengo, ni falta)" />
+	</div>
+</footer>
+
+<style>
+	footer {
+		margin-top: 2rem;
+		padding: 1rem 0;
+		border-top: 2px solid black;
+	}
+	.redes {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		gap: 0.5rem;
+	}
+</style>
