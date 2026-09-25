@@ -2,6 +2,8 @@
 
 **Alumno:** Santiago Becerra Arias
 **Registro:** 23300648
+**Sitio publicado:** [https://becerrablog.netlify.app](https://becerrablog.netlify.app)
+**Repositorio:** [https://github.com/BroImJustBaka/Myblog](https://github.com/BroImJustBaka/Myblog)
 
 ## Marco teórico
 
@@ -69,4 +71,4 @@ De responsivo aprendí lo del enfoque mobile-first: primero dejo todo bien para 
 
 La práctica me sirvió para entender cómo se organiza un proyecto en Astro: páginas por un lado, componentes reutilizables por otro y scripts aparte. Creo que la ventaja más grande es la reutilización, porque cambiar algo (como el nombre en el footer) se hace en un solo archivo. También me quedó claro que Astro trata de mandar poco JavaScript al navegador y que solo lo que necesita interactividad, como el botón del menú, lleva un `<script>`.
 
-Todavía no domino del todo cómo se combinan estilos globales con los de cada componente ni qué pasa cuando hay muchos componentes anidados, pero con el ejercicio ya me siento más cómodo para seguir con las siguientes unidades del tutorial (layouts y contenido). Al final el sitio quedó publicado en Netlify desde el repositorio de GitHub y funciona en celular y en pantalla grande.
+Todavía no domino del todo cómo se combinan estilos globales con los de cada componente ni qué pasa cuando hay muchos componentes anidados, pero con el ejercicio ya me siento más cómodo para seguir con las siguientes unidades del tutorial (layouts y contenido). Al final el sitio quedó publicado en Netlify (https://becerrablog.netlify.app) desde el repositorio de GitHub y funciona en celular y en pantalla grande.
