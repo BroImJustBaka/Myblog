@@ -1,0 +1,14 @@
+﻿---
+import BaseLayout from './BaseLayout.astro';
+import Etiquetas from '../components/Etiquetas.astro';
+
+const { frontmatter } = Astro.props;
+const fecha = String(frontmatter.pubDate).slice(0, 10);
+---
+<BaseLayout pageTitle={frontmatter.title}>
+	<p>Publicado el {fecha} por {frontmatter.author}</p>
+	<p><em>{frontmatter.description}</em></p>
+	<img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
+	<Etiquetas lista={frontmatter.tags} />
+	<slot />
+</BaseLayout>

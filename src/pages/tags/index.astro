@@ -1,0 +1,12 @@
+﻿---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Etiquetas from '../../components/Etiquetas.astro';
+
+const publicaciones = Object.values(import.meta.glob('../posts/*.md', { eager: true }));
+const etiquetas = [...new Set(publicaciones.flatMap((p: any) => p.frontmatter.tags))];
+const pageTitle = "Índice de etiquetas";
+---
+<BaseLayout pageTitle={pageTitle}>
+	<p>Todas las etiquetas que se me ocurrieron para fingir que estoy organizado:</p>
+	<Etiquetas lista={etiquetas} />
+</BaseLayout>

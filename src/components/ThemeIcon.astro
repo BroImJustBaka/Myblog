@@ -1,0 +1,45 @@
+﻿<button id="tema" aria-label="Cambiar tema">
+	<svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24">
+		<g class="sol" stroke-width="2" stroke-linecap="round">
+			<circle cx="12" cy="12" r="5" />
+			<path d="M12 1v3M12 20v3M1 12h3M20 12h3M4 4l2 2M18 18l2 2M4 20l2-2M18 6l2-2" />
+		</g>
+		<path class="luna" d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z" />
+	</svg>
+</button>
+
+<style>
+	#tema {
+		border: 0;
+		background: none;
+		cursor: pointer;
+		padding: 0;
+	}
+	.sol {
+		stroke: black;
+		fill: black;
+	}
+	.luna {
+		fill: transparent;
+	}
+	:global(.oscuro) .sol {
+		stroke: transparent;
+		fill: transparent;
+	}
+	:global(.oscuro) .luna {
+		fill: white;
+	}
+</style>
+
+<script is:inline>
+	const guardado = localStorage.getItem('tema');
+	const prefiereOscuro = window.matchMedia('(prefers-color-scheme: dark)').matches;
+	const oscuro = guardado ? guardado === 'oscuro' : prefiereOscuro;
+
+	document.documentElement.classList.toggle('oscuro', oscuro);
+
+	document.getElementById('tema').addEventListener('click', () => {
+		const ahora = document.documentElement.classList.toggle('oscuro');
+		localStorage.setItem('tema', ahora ? 'oscuro' : 'claro');
+	});
+</script>

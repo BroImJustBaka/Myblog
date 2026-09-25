@@ -26,7 +26,7 @@ h1 {
 .enlaces a {
   display: block;
   padding: 0.5rem 0;
-  color: black;
+  color: inherit;
 }
 
 .enlaces.abierto {
@@ -46,4 +46,17 @@ h1 {
     display: inline-block;
     padding: 0.5rem 1rem 0.5rem 0;
   }
+}
+
+html.oscuro {
+  background-color: #0d0950;
+  color: white;
+}
+
+.oscuro a {
+  color: #ff9776;
+}
+
+.oscuro .menu-btn {
+  border-color: white;
 }

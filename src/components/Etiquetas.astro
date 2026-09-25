@@ -1,0 +1,23 @@
+﻿---
+const { lista } = Astro.props;
+---
+<div class="etiquetas">
+	{lista.map((nombre: string) => (
+		<a class="etiqueta" href={`/tags/${encodeURIComponent(nombre)}/`}>{nombre}</a>
+	))}
+</div>
+
+<style>
+	.etiquetas {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		margin: 1rem 0;
+	}
+	.etiqueta {
+		border: 1px dotted currentColor;
+		border-radius: 0.5rem;
+		padding: 0.25rem 0.75rem;
+		text-decoration: none;
+	}
+</style>

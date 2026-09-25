@@ -1,9 +1,13 @@
 ﻿---
 import Navigation from './navigation.astro';
 import Menu from './Menu.astro';
+import ThemeIcon from './ThemeIcon.astro';
 ---
 <header>
-	<Menu />
+	<div class="barra">
+		<ThemeIcon />
+		<Menu />
+	</div>
 	<nav>
 		<Navigation />
 	</nav>
@@ -11,8 +15,12 @@ import Menu from './Menu.astro';
 
 <style>
 	header {
-		position: relative;
-		border-bottom: 2px solid black;
+		border-bottom: 2px solid currentColor;
 		padding-bottom: 0.5rem;
+	}
+	.barra {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 </style>

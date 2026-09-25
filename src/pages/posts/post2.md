@@ -1,4 +1,5 @@
 ﻿---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: Mi segunda publicación en el blog
 author: Santiago Becerra Arias
 description: "Después de aprender un poco de Astro, ¡no podía parar!"
@@ -8,7 +9,7 @@ image:
 pubDate: 2022-07-08
 tags: ["astro", "bloguear", "aprender en público", "éxitos"]
 ---
-# ayuda no se que poner aquí 
+## ayuda no se que poner aquí 
 
 actualización de vida sigo haciendo esta pendejada
 

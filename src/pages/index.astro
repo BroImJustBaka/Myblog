@@ -1,29 +1,10 @@
 ﻿---
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import '../styles/global.css'
-const pageTitle = "página principal";
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Greeting from '../components/Greeting';
+
+const pageTitle = "Puras putas mamadas el blog";
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-		<Header />
-		<h1>Puras putas mamadas el blog</h1>
-		<Footer />
-
-		<style>
-			h1 {
-				color: green;
-				font-size: 4rem;
-			}
-		</style>
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+	<h2>El subtítulo más impresionante que pude improvisar</h2>
+	<Greeting client:load messages={["Hola", "Qué onda", "Ay no, otra vez tú", "Ya me voy a dormir"]} />
+</BaseLayout>
